@@ -34,7 +34,7 @@ end
 
 
 
-def move(board, index, token )
+def move(index, token )
   @board[index] = token
 end
 
