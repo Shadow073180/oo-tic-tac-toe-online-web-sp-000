@@ -1,7 +1,7 @@
 require 'pry'
 class TicTacToe
 
-attr_accessor
+attr_accessor :user_input, :
 
 def initialize(board)
   @board = board || Array.new(9, " ")
@@ -33,13 +33,13 @@ end
 
 
 def input_to_index(user_input)
-   user_input.to_i - 1
+   @user_input.to_i - 1
 end
 
 
 
 def move(index, token = "X" )
-  @board[index] = token
+  @board[@index] = token
 end
 
 
