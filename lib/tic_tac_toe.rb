@@ -121,7 +121,7 @@ end
 
  def draw?
    drew = false
-     if !won?(board) && full?(board)
+     if !won? && full?
        drew = true
      end
    return drew
