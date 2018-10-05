@@ -1,7 +1,7 @@
 require 'pry'
 class TicTacToe
 
-attr_accessor :user_input, :
+attr_accessor :user_input, :index
 
 def initialize(board)
   @board = board || Array.new(9, " ")
