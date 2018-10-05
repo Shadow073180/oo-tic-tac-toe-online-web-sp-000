@@ -1,7 +1,7 @@
 require 'pry'
 class TicTacToe
 
-attr_accessor 
+attr_accessor
 
 def initialize(board)
   @board = board || [" "," "," "," "," "," ", " "," "," "]
