@@ -119,7 +119,7 @@ def full?
 end
 
 
- def draw?(board)
+ def draw?
    drew = false
      if !won?(board) && full?(board)
        drew = true
