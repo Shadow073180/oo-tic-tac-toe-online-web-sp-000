@@ -4,7 +4,7 @@ class TicTacToe
 attr_accessor
 
 def initialize(board)
-  @board = board || [" "," "," "," "," "," ", " "," "," "]
+  @board = board || Array.new(9, " ")
 end
 
 def board
