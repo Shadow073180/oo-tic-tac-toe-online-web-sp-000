@@ -63,8 +63,8 @@ def turn
   user_input = gets.strip
   index = input_to_index(user_input)
     if valid_move?
-      move(board, index, current_player(board) )
-      display_board(board)
+      move(index, token = "X" )
+      display_board
     else
       puts "Please enter 1-9:"
       user_input = gets.strip
@@ -73,7 +73,7 @@ def turn
 end
 
 
-def turn_count(board)
+def turn_count
   counter = 0
     board.each do |x|
       if x == "X" || x == "O"
@@ -84,8 +84,8 @@ def turn_count(board)
 end
 
 
-def current_player(board)
-  counter2 = turn_count(board)
+def current_player
+  counter2 = turn_count
     if counter2 % 2 == 0
       return "X"
     else
