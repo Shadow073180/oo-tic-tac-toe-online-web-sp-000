@@ -40,7 +40,7 @@ end
 
 
 
-def valid_move?(board, index)
+def valid_move?
    valid = false
   if @index.between?(0, 8) && !position_taken?
     valid = true
