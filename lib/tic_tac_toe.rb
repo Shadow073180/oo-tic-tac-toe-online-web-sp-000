@@ -109,9 +109,9 @@ end
 
 
 
-def full?(board)
+def full?
   full  = false
-  counter3 = turn_count(board)
+  counter3 = turn_count
     if counter3 == 9
       full = true
     end
