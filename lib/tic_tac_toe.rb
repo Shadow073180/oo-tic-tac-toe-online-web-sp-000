@@ -136,12 +136,12 @@ def over?
 end
 
 
-def winner(board)
+def winner
   win = nil
     WIN_COMBINATIONS.each do |win_combination|
-      if board[win_combination[0]] == "X" && board[win_combination[1]] == "X" && board[win_combination[2]] == "X"
+      if @board[win_combination[0]] == "X" && @board[win_combination[1]] == "X" && @board[win_combination[2]] == "X"
         win = "X"
-      elsif  board[win_combination[0]] == "O" && board[win_combination[1]] == "O" && board[win_combination[2]] == "O"
+      elsif  @board[win_combination[0]] == "O" && @board[win_combination[1]] == "O" && @board[win_combination[2]] == "O"
         win = "O"
       end
     end
@@ -149,13 +149,13 @@ def winner(board)
 end
 
 
-def play(board)
-  until over?(board)
-    turn(board)
+def play
+  until over?
+    turn
   end
-    if won?(board)
+    if won?
       puts  "Congratulations #{winner(board)}!"
-    elsif draw?(board)
+    elsif draw?
       puts  "Cat's Game!"
     end
 end
