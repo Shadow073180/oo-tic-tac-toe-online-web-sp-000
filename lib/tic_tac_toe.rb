@@ -51,7 +51,7 @@ end
 
 def position_taken?
   taken = true
-    if board[index] == " " || board[index]==""|| board[index]== nil
+    if @board[index] == " " || @board[index]==""|| @board[index]== nil
       taken = false
     end
   return taken
