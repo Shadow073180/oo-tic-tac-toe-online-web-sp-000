@@ -128,9 +128,9 @@ end
 end
 
 
-def over?(board)
+def over?
   over = false
-    if won?(board) || full?(board) || draw?(board)
+    if won? || full? || draw?
       over = true
     end
 end
