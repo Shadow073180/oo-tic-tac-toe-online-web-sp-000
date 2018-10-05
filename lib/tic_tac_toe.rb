@@ -3,7 +3,7 @@ class TicTacToe
 
 attr_accessor :user_input, :index
 
-def initialize(board)
+def initialize
   @board = board || Array.new(9, " ")
 end
 
