@@ -49,7 +49,7 @@ def valid_move?
 end
 
 
-def position_taken?(board, index)
+def position_taken?
   taken = true
     if board[index] == " " || board[index]==""|| board[index]== nil
       taken = false
